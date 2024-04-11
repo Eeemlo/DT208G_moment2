@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../bilder/pin-board.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    width: 100%;
+    min-height: 1000px;
+    height: auto;
+    padding: 10px 50px;
+}
+
+h1 {
+    font-family: "Permanent Marker", cursive;
+}
+
+p,
+input,
+label,
+select,
+option,
+.todo button {
+    font-family: "Waiting for the Sunrise", cursive;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    line-height: 1em;
+}
+
+.completed {
+    text-decoration-line: line-through;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+}
+
+img {
+    max-width: 5em;
+    display: block;
+    margin: 0 auto;
+}
+
+.todoSection {
+    background-color: #fffbf6;
+    position: relative;
+    min-height: 800px;
+    max-width: 1000px;
+    margin: 100px 10% 80px;
+    padding: 10px 20px 50px;
+    border-radius: 15px 215px 15px 215px/215px 15px 215px 15px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.337), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.todoContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.todoContainer h1 {
+    position: relative;
+    z-index: 5;
+}
+
+#todoContainer-1 h1 {
+    transform: rotate(-15deg);
+    font-size: 2.5em;
+    margin-bottom: -20px;
+    margin-left: -200px;
+}
+
+#todoContainer-2 h1 {
+    transform: rotate(-7deg);
+    font-size: 2em;
+    margin-bottom: -10px;
+    margin-left: -120px;
+}
+
+#todoContainer-3 h1 {
+    transform: rotate(3deg);
+    font-size: 2em;
+    margin-bottom: -6px;
+    margin-left: -120px;
+}
+
+
+#prio-1 {
+    border: 10px solid red;
+    border-radius: 225px 45px 225px 15px/25px 225px 25px 225px;
+    transform: rotate(-2deg);
+}
+
+
+#prio-2 {
+    border: 10px solid #ff7700;
+    border-radius: 35px 205px 35px 205px/205px 35px 205px 35px;
+    transform: rotate(-1deg);
+}
+
+#prio-3 {
+    border: 10px solid rgb(255, 204, 0);
+    border-radius: 105px 45px 105px 15px/25px 105px 25px 105px;
+    transform: rotate(2deg);
+}
+
+.todoList {
+    background-color: #fffbf6;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 2em;
+    padding: 2em 0.5em;
+}
+
+.todo p {
+    max-width: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.todo input[type=checkbox] {
+    margin: 0 2em 0 2px;
+}
+
+.todo button {
+    height: 2em;
+    padding: 0 1em;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 225px 45px 225px 15px/25px 225px 25px 225px;
+    background-color: rgb(217, 172, 24);
+}
+
+form {
+    background-image: url("../bilder/post-it.png");
+    background-size: 25em;
+    background-repeat: no-repeat;
+    height: 30em;
+    padding: 100px 70px;
+    display: flex;
+    flex-direction: column;
+    max-width: 26em;
+    margin: -40px auto -500px;
+    position: relative;
+    z-index: 7;
+    float: right;
+    transform: rotate(10deg);
+}
+
+input,
+label,
+select,
+p {
+    transform: rotate(5deg) skewX(-2deg);
+    border: none;
+}
+
+input, select {
+    margin-bottom: 8px;
+    padding: 2px 4px;
+}
+
+form p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+input[type=submit] {
+    height: 2em;
+    padding: 0 1em;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 225px 45px 225px 15px/25px 225px 25px 225px;
+    background-color: rgb(217, 172, 24);
+    cursor: pointer;
+}
+
+.todo button:hover,
+input[type=submit]:hover {
+    background-color:  rgb(183, 142, 6);
+}
+
+.copyright {
+    position: absolute;
+    bottom: 10;
+    right: 30;
+    transform: rotate(-1deg);
+}
+
+@media  screen and (max-width:1450px) {
+    form {
+        margin: -200px auto -500px;
+    }
+
+    .todoSection {
+        margin: 320px 10% 80px;
+    }
+    
+}
+
+@media  screen and (max-width:1000px) {
+    body {
+        background-image: url("../bilder/pin-board-standing.png");
+    }
+    
+    form {
+        margin: -230px auto -500px;
+    }
+
+    .todoSection {
+        margin: 320px 0 80px;
+    }
+    
+}
+
+@media  screen and (max-width:750px) {
+    body {
+        min-height: 1000px;
+        padding: 10px 30px;
+    }
+
+    form {
+        margin: -350px 0 -500px -30px;
+    }
+
+    .todoSection {
+        margin: 400px 0 80px;
+        min-height: 600px;
+        padding: 10px 5px 50px;
+    }
+    
+    .todo p {
+        margin-top: 0px;
+    }
+    
+}
+
+@media  screen and (max-width:480px) {
+    #todoContainer-1 h1 {
+        font-size: 1.8em;
+        margin-left: -90px;
+    }
+    
+    #todoContainer-2 h1,
+    #todoContainer-3 h1 {
+        font-size: 1.4em;
+        margin-left: -40px;
+    }
+
+    body {
+        padding: 10px 15px;
+        background-image: url("../bilder/pin-board-noframe.png");
+    
+    }
+
+    form {
+        background-size: 20em;
+        height: 20em;
+        padding: 65px 30px 0 60px;
+        margin: -290px 0 -500px -30px;
+        width: 18.5em;
+    }
+    
+    .todoSection {
+        margin: 340px 0 80px;
+    }
+}
+
+@media  screen and (max-width:327px) {
+
+    form {
+        padding: 65px 30px 0 60px;
+    }
+    
+}

@@ -161,15 +161,16 @@ form {
 
 input,
 label,
-select,
 p {
     transform: rotate(5deg) skewX(-2deg);
     border: none;
 }
 
-input, select {
+input {
     margin-bottom: 8px;
     padding: 2px 4px;
+    border-radius: 25px 225px 25px 225px/225px 45px 225px 15px;
+
 }
 
 form p {
@@ -182,9 +183,9 @@ input[type=submit] {
     padding: 0 1em;
     cursor: pointer;
     border: 0px;
-    border-radius: 225px 45px 225px 15px/25px 225px 25px 225px;
     background-color: rgb(217, 172, 24);
     cursor: pointer;
+    border-radius: 225px 45px 225px 15px/25px 225px 25px 225px;
 }
 
 .todo button:hover,

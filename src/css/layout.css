@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("../bilder/pin-board.png");
+    background-image: url("../bilder/pin-board.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     min-height: 100vh;
@@ -225,7 +225,7 @@ input[type=submit]:hover {
 
 @media  screen and (max-width:1000px) {
     body {
-        background-image: url("../bilder/pin-board-standing.png");
+        background-image: url("../bilder/pin-board-standing.jpg");
     }
     
     form {
@@ -274,7 +274,7 @@ input[type=submit]:hover {
 
     body {
         padding: 10px 15px;
-        background-image: url("../bilder/pin-board-noframe.png");
+        background-image: url("../bilder/pin-board-noframe.jpg");
     
     }
 

@@ -21,9 +21,15 @@ document.addEventListener('DOMContentLoaded', () => {
 // Funktion för att lägga till en ny todo
 function addTodo(task: string, priority: number): void {
     const added = todoList.addTodo(task, priority);
+    const todoInput = document.querySelector("#todo") as HTMLInputElement;
+    const prioInput = document.querySelector("#prio") as HTMLInputElement;
+
     if (!added) {
         alert("Du måste fylla i en todo!");
     }
+    todoInput.value = "";
+    prioInput.value = "";
+
     loadTodos();
 }
 

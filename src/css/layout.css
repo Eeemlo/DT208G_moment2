@@ -225,11 +225,11 @@ input[type=submit]:hover {
 
 @media  screen and (max-width:1000px) {
     body {
-        background-image: url("../bilder/pin-board-standing.jpg");
+        background-image: url("../bilder/pin-board-noframe.jpg");
     }
     
     form {
-        margin: -230px auto -500px;
+        margin: -280px auto -500px;
     }
 
     .todoSection {
@@ -274,8 +274,6 @@ input[type=submit]:hover {
 
     body {
         padding: 10px 15px;
-        background-image: url("../bilder/pin-board-noframe.jpg");
-    
     }
 
     form {
